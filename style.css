@@ -1,0 +1,254 @@
+:root {
+    --pricipal: #e5d2b2;
+    --secundario: #EE6C4D;
+    --terciario: #33312E;
+}
+
+* {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+body {
+    background-color: var(--pricipal);
+}
+
+header {
+    background: url(imagens/head-escuro.png) black center center no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center; 
+}
+
+aside {
+    color: var(--secundario);
+    display: inline;
+    font-size: 2em;
+}
+
+aside p {
+    display: inline;
+}
+
+div#cabecalho {
+    display: inline-block;
+    margin: 44dvh 936px 0px 0px;
+}
+
+h1 {
+    margin: auto;
+    font-size: 5em;
+}
+
+p#slogan {
+    margin: auto;
+    font-size: 1.8em;
+}
+
+main {
+    background-image: linear-gradient(to top , var(--secundario), var(--pricipal));
+    height: auto;
+    width: 1315px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: inset rgba(0, 0, 0, 0.24) 0px 10px 27px;
+}
+
+h2 {
+    margin: 0px 100px ;
+    display: inline;
+}
+
+aside#vsMobile {
+    display: none;
+}
+
+section#album {
+    margin: 0px 50px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+    background:  url(imagens/fundo.jpg) black center center no-repeat fixed;
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: inset rgba(0, 0, 0, 0.274) 6px 6px 25px;
+}
+
+img.album {
+    height: 200px;
+    border-radius: 20px;
+    margin: 200px 0px 150px -80px;
+    border: 2px solid var(--pricipal);
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 3px;
+    transform: rotate(15deg);
+}
+
+img.album:hover {
+    border: 2px solid var(--secundario);
+    margin: 200px 78px 200px -80px;
+    margin-top: 35px;
+    height: 300px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 8px 8px 8px;
+    transform: rotate(0deg);
+}
+
+section#album p {
+    background-color: rgba(255, 255, 255, 0.267);
+    width: 500px;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+
+section#emocional {
+    margin: 50px;
+    margin-top: 150px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#emocional img {
+    height: 560px;
+}
+
+
+#emocional p {
+    background-color: rgba(0, 0, 0, 0.281);
+    color: rgb(216, 216, 216);
+    font-size: 1.2em;
+    width: 500px;
+    height: 120px;
+    margin: 145px 5px;
+    padding: 50px;
+    border-radius: 40%;
+}
+
+section#logico {
+    margin: 50px;
+    margin-top: 0px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#logico img {
+    height: 450px;
+    margin: 50px;
+    margin-left: -91px;
+}
+
+#logico p {
+    background-color: white;
+    font-size: 1.2em;
+    border-radius: 50% 50px 50% 50px;
+    width: 637px;
+    margin: 95px -25px;
+    margin-left: -124px;
+    padding: 80px;
+    padding-bottom: 0px;
+}
+
+section#racional {
+    margin: 50px;
+    margin-top: 0px;
+    padding-left: 222px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#racional p {
+    font-size: 1.2em;
+    width: 500px;
+    margin: 23px 0px 0px -131px;
+    background-color: #e5d2b28a;
+    height: 212px;
+    padding: 107px 111px 187px;
+    border-radius: 40px 54%;
+}
+
+#racional img {
+    margin: 121px 0px 0px -115px;
+}
+
+section#faq {
+    width: 733px;
+    margin: 50px auto;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.295) 3px 3px 3px;
+    background-color: #834f2f;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #444;
+    max-width: 800px;
+}
+  
+section#faq h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--secundario);
+    padding: 40px;
+  }
+  
+div.faq-item {
+    background-color: rgba(255, 255, 255, 0.384);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(231, 111, 145, 0.1);
+    transition: all 0.3s ease;
+}
+  
+div.faq-item:hover {
+    background: rgba(255, 255, 255, 0.692);
+    transform: translateY(-3px);
+}
+  
+div.faq-item h3 {
+    margin-bottom: 10px;
+    color: #cf5d40;
+    font-size: 1.2rem;
+}
+  
+div.faq-item p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+  
+
+footer {
+    background-color: var(--terciario);
+    color: #d8d8d8;
+    padding: 50px;
+}
+footer p {
+    font-size: 1.3em;
+    display: inline;
+}
+
+footer a {
+    color: var(--pricipal);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: rgb(0, 0, 0) 3px 4px 11px;
+    text-decoration: underline;
+}
+
+p#copy {
+    display: block;
+    margin-top: 60px;
+    
+}
