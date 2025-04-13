@@ -2,7 +2,7 @@
 
     header {
         background-image: url(imagens/head-mobile.png);
-        width: 806px;
+        width: 600px;
     }
 
     div#cabecalho {
@@ -10,7 +10,7 @@
     }
 
     main {
-        width: 1000px;
+        width: 600px;
     }
 
     aside#vsMobile {
@@ -20,7 +20,7 @@
         padding: 6px;
         border-radius: 20px;
         width: 640px;
-        position: absolute;
+        position: absolute; 
         top: 570px;
     }
 
