@@ -2,7 +2,7 @@
 
 @media (max-width: 799px) {
     main {
-        width: auto; 
+        width: 500px; 
     }
 
     section#album {
@@ -12,18 +12,66 @@
     section#album p {
         margin-left: -90px;
         width: 307px;
-        color: brown;
     }
 
     img.album {
         height: 125px;
+        margin-top: 50px;
     }
 
     img.album:hover {
         border: 2px solid var(--pricipal);
-        margin: 200px 0px 150px -80px;
-        height: 150px;
+        margin: 50px 0px 150px -80px;
+        height: 125px;
         box-shadow: initial;
         transform: rotate(15deg);
+    }
+
+    section#emocional img {
+        height: 350px;
+    }
+
+    #emocional p {
+        font-size: 1.1em;
+        margin: -26px 25px 0px -194px;
+        padding: 35px 60px 80px 60px;
+    }
+
+    section#logico img {
+        height: 375px;
+        margin: 50px;
+        margin-left: -118px;
+    }
+
+    #logico p {
+        font-size: 1.1em;
+        
+        margin-bottom: -80px;
+        position: relative;
+        z-index: 1000px;
+    }
+
+    section#racional img {
+        height: 350px;
+    }
+
+    #racional p {
+        font-size: 1.1em;
+        padding: 115px 24px 200px 12px;
+        margin: -37px -25px 6px -261px;
+        border-radius: 40px 35%;
+    }
+
+    section#faq {
+        width: 325px;
+    }
+
+    
+    section#faq h2 {
+        font-size: 2em;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        display: block;
     }
 }
