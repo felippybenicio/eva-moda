@@ -55,6 +55,7 @@
 
     img.album {
         height: 150px;
+        margin-top: 20px;
     }
 
     img.album:hover {
@@ -64,6 +65,7 @@
         box-shadow: initial;
         transform: rotate(15deg);
     }
+
     section#album{
         padding-top: 50px;
     }

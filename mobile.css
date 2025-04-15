@@ -2,6 +2,27 @@
 
 @media (max-width: 799px) {
     main {
-        width: auto; 
+        width: 500px; 
+    }
+
+    section#album {
+        padding-left: 116px;
+    }
+
+    section#album p {
+        margin-left: -90px;
+        width: 307px;
+    }
+
+    img.album {
+        height: 125px;
+    }
+
+    img.album:hover {
+        border: 2px solid var(--pricipal);
+        margin: 200px 0px 150px -80px;
+        height: 150px;
+        box-shadow: initial;
+        transform: rotate(15deg);
     }
 }
