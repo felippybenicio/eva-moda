@@ -2,7 +2,7 @@
 
 @media (max-width: 799px) {
     main {
-        width: 500px; 
+        width: auto; 
     }
 
     section#album {
@@ -68,7 +68,7 @@
 
     
     section#faq h2 {
-        font-size: 2em;
+        font-size: 2 em;
         text-align: center;
         padding: 0px;
         margin: 0px;
