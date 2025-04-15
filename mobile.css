@@ -2,7 +2,7 @@
 
 @media (max-width: 799px) {
     main {
-        width: auto; 
+        width: 600px; 
     }
 
     section#album {
@@ -12,6 +12,7 @@
     section#album p {
         margin-left: -90px;
         width: 307px;
+        color: blue;
     }
 
     img.album {
