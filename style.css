@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--pricipal);
+    overflow-x: hidden;
 }
 
 header {
