@@ -2,7 +2,8 @@
 
 @media (max-width: 799px) {
     main {
-        width: 600px; 
+        width: 500px; 
+        margin: auto;
     }
 
     section#album {
