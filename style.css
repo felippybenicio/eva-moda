@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     --pricipal: #e5d2b2;
     --secundario: #EE6C4D;
@@ -14,7 +16,7 @@ body {
 }
 
 header {
-    background: url(imagens/head-escuro.png) black center center no-repeat;
+    background: url(imagens/head-g.png) black center center no-repeat;
     background-size: cover;
     height: 100dvh;
     width: 100dvw;
@@ -24,27 +26,29 @@ header {
     text-align: center; 
 }
 
-aside {
+aside#promocao {
     color: var(--secundario);
     display: inline;
     font-size: 2em;
+    margin: 25px;
+    margin-bottom: 100px;
 }
 
-aside p {
+#promocao p {
     display: inline;
 }
 
-div#cabecalho {
-    display: inline-block;
-    margin: 44dvh 936px 0px 0px;
-}
-
 h1 {
+    color: rgba(255, 255, 255, 0.712);
     margin: auto;
     font-size: 5em;
+    margin-bottom: 240px;
 }
 
+
+
 p#slogan {
+    color: rgba(255, 255, 255, 0.712);
     margin: auto;
     font-size: 1.8em;
 }
