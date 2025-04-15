@@ -12,6 +12,7 @@
     section#album p {
         margin-left: -90px;
         width: 307px;
+        color: brown;
     }
 
     img.album {
