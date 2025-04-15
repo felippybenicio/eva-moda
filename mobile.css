@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media (max-width: 799px) {
+
+    header{
+        margin: 0px;
+    }
+    
     main {
         width: 500px; 
         margin: auto;
