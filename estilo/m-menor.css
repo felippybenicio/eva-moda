@@ -17,6 +17,10 @@
         width: auto;
     }
 
+    h1 {
+        font-size: 5em;
+    }
+
     aside#promocao {
         margin-bottom: 10px;
         margin-top: 20px;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300..700&display=swap');
 
 :root {
     --pricipal: #e5d2b2;
@@ -9,7 +9,7 @@
 }
 
 :root {
-    --titulo: 'Raleway', 'Times New Roman', Times, serif;
+    --titulo: 'Great Vibes', 'Times New Roman', Times, serif;
     --texto: 'Quicksand', 'Times New Roman', Times, serif;
 }
 
@@ -51,7 +51,7 @@ header {
 h1 {
     color: rgba(255, 255, 255, 0.712);
     margin: auto;
-    font-size: 5em;
+    font-size: 8em;
     margin-bottom: 240px;
     font-family: var(--titulo);
 }
@@ -107,7 +107,12 @@ img.album {
     transform: rotate(15deg);
 }
 
-img.album:hover {
+.album {
+    transition: transform 0.8s ease-in-out;
+  }
+  
+.album.animado {
+    transform: scale(1.1) rotate(2deg);
     border: 2px solid var(--secundario);
     margin: 200px 78px 200px -80px;
     margin-top: 35px;
@@ -115,6 +120,16 @@ img.album:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 8px 8px 8px;
     transform: rotate(0deg);
 }
+
+
+/* img.album:hover {
+    border: 2px solid var(--secundario);
+    margin: 200px 78px 200px -80px;
+    margin-top: 35px;
+    height: 300px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 8px 8px 8px;
+    transform: rotate(0deg);
+} */
 
 section#album p {
     background-color: rgba(255, 255, 255, 0.267);

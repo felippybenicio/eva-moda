@@ -42,21 +42,30 @@ let index = 0;
 
 
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const imagens = document.querySelectorAll(".album");
+    let indexAtual = 0;
 
-// let intdex = 0
-// const imagens = document.getElementById('comprimido')
-// const total = imagens.children.length
+    function animarProximaImagem() {
+      // Remove a classe de todas as imagens
+      imagens.forEach(img => img.classList.remove("animado"));
 
-// function carrossel() {
-//     imagens.style.transform = `translateX(${-index * 300}px)`
-// }
-    
-// function avancar() {
-//     index = (index + 1) % total
-//     carrossel()
-// }
+      // Adiciona a classe só na próxima imagem
+      imagens[indexAtual].classList.add("animado");
 
-// function voltar() {
-//     index = (index - 1 + total) % total
-//     carrossel()
-// }
+      // Atualiza o índice pra próxima imagem
+      indexAtual = (indexAtual + 1) % imagens.length;
+    }
+
+    // Roda a primeira animação
+    animarProximaImagem();
+
+    // Troca a imagem a cada 3 segundos (3000 ms)
+    setInterval(animarProximaImagem, 3000);
+  });
+
+
+
+  
+
+
