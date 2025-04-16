@@ -19,6 +19,7 @@
 
     aside#promocao {
         margin-bottom: 10px;
+        margin-top: 20px;
     }
 
     div#cabecalho {
@@ -60,7 +61,7 @@
 
     img.album:hover {
         border: 2px solid var(--pricipal);
-        margin: 200px 0px 150px -80px;
+        margin: 20px 0px 150px -80px;
         height: 150px;
         box-shadow: initial;
         transform: rotate(15deg);
