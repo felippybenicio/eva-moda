@@ -7,7 +7,7 @@
     header{
         background-image: url(../imagens/head-p.png);
         margin: auto;
-        width: 350px;
+        width: 400px;
     }
 
     h1 {
@@ -19,7 +19,7 @@
     }
 
     main {
-        width: 350px; 
+        width: 400px; 
         margin: auto;
     }
 
@@ -28,7 +28,7 @@
     }
 
     section#album p {
-        margin-left: -90px;
+        margin-left: -140px;
         width: 307px;
     }
 
@@ -47,6 +47,7 @@
 
     section#emocional img {
         height: 350px;
+        margin-left:  -90px;
     }
 
     #emocional p {
@@ -58,7 +59,7 @@
     section#logico img {
         height: 375px;
         margin: 50px;
-        margin-left: -118px;
+        margin-left: -184px;
     }
 
     #logico p {
@@ -71,6 +72,7 @@
 
     section#racional img {
         height: 350px;
+        margin-left: -160px;
     }
 
     #racional p {
@@ -96,7 +98,7 @@
     footer {
         font-size: 1em;
         margin: auto;
-        width: 400px;
+        width: 300px;
     }
 
 }
