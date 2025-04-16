@@ -26,25 +26,42 @@
 
     section#album {
         padding-left: 116px;
+        padding-top: 25px;
     }
 
     section#album p {
         margin-left: -111px;
         width: 246px;
     }
-
-    img.album {
-        height: 113px;
-        margin-top: 50px;
+    div#comprimido.carrossel {
+        margin: 0px 50px 50px -60px;
     }
 
-    img.album:hover {
-        border: 2px solid var(--pricipal);
-        margin: 50px 0px 150px -80px;
-        height: 125px;
-        box-shadow: initial;
-        transform: rotate(15deg);
+    .carrossel {
+        width: 100%;
+        max-width: 500px;
+        overflow: hidden;
+        margin: auto 50px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
+    
+    .carrossel .slides {
+        display: flex;
+        transition: transform 0.8s ease-in-out;
+        width: 100%;
+    }
+    
+    .carrossel .album {
+        min-width: 100%;
+        height: auto;
+        transform: rotate(0deg); /* remove a rotação do estilo original */
+        border: none;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    
 
     section#emocional img {
         height: 350px;

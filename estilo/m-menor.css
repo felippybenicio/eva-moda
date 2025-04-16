@@ -54,21 +54,24 @@
 
     div#comprimido {
         margin: auto;
-        
-        
     }
 
     img.album {
-        height: 150px;
+        height: 145px;
         margin-top: 20px;
     }
 
-    img.album:hover {
-        border: 2px solid var(--pricipal);
-        margin: 20px 0px 150px -80px;
-        height: 150px;
-        box-shadow: initial;
-        transform: rotate(15deg);
+    .album {
+        transition: transform 0.8s ease-in-out;
+      }
+      
+    .album.animado {
+        transition: transform 0.5s ease-in-out;
+        border: 2px solid var(--secundario);
+        box-shadow: rgba(0, 0, 0, 0.24) 8px 8px 8px;
+        height: 200px;
+        transform: rotate(0deg);
+        margin: 0px 78px 200px -80px;
     }
 
     section#album{

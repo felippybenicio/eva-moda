@@ -39,9 +39,20 @@ let index = 0;
 
   mostrarFrase();
   setInterval(mostrarFrase, 3000);
+if (innerWidth <= 799) {
+    let slideIndex = 0;
+    const slides = document.querySelector(".carrossel .slides");
+    const totalSlides = document.querySelectorAll(".carrossel .album").length;
 
+    function showSlide(index) {
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    }
 
-
+    setInterval(() => {
+        slideIndex = (slideIndex + 1) % totalSlides;
+        showSlide(slideIndex);
+    }, 3000);
+}else if(innerWidth <= 1225) {
   document.addEventListener("DOMContentLoaded", () => {
     const imagens = document.querySelectorAll(".album");
     let indexAtual = 0;
@@ -62,9 +73,8 @@ let index = 0;
 
     // Troca a imagem a cada 3 segundos (3000 ms)
     setInterval(animarProximaImagem, 3000);
-  });
-
-
+  })
+} 
 
   
 
