@@ -2,12 +2,12 @@
 
 @media (max-width: 799px) {
 
-
+    
 
     header{
         background-image: url(../imagens/head-p.png);
         margin: auto;
-        width: 450px;
+        width: 400px;
     }
 
     h1 {
@@ -19,7 +19,7 @@
     }
 
     main {
-        width: 450px; 
+        width: 400px; 
         margin: auto;
     }
 
