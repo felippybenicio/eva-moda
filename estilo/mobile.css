@@ -2,9 +2,20 @@
 
 @media (max-width: 799px) {
 
+
+
     header{
-        margin: 0px;
+        background-image: url(../imagens/head-p.png);
+        margin: center;
         width: 500px;
+    }
+
+    h1 {
+        margin-bottom: 100px;
+    }
+
+    p#slogan {
+        font-size: 1.4em;
     }
 
     main {
@@ -39,7 +50,7 @@
     }
 
     #emocional p {
-        font-size: 1.1em;
+        font-size: 1em;
         margin: -26px 25px 0px -194px;
         padding: 35px 60px 80px 60px;
     }
@@ -51,7 +62,7 @@
     }
 
     #logico p {
-        font-size: 1.1em;
+        font-size: 1em;
         
         margin-bottom: -80px;
         position: relative;
@@ -63,10 +74,10 @@
     }
 
     #racional p {
-        font-size: 1.1em;
+        font-size: 1em;
         padding: 115px 24px 200px 12px;
         margin: -37px -25px 6px -261px;
-        border-radius: 40px 35%;
+        border-radius: 40px 25%;
     }
 
     section#faq {
@@ -81,4 +92,11 @@
         margin: 0px;
         display: block;
     }
+
+    footer {
+        font-size: 1em;
+        margin: auto;
+        width: 400px;
+    }
+
 }
