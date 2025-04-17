@@ -34,31 +34,13 @@
         width: auto;
     }
 
-    aside#vsMobile {
-        display: none;
-        background-color: rgba(255, 255, 255, 0.432);
-        margin: auto;
-        padding: 6px;
-        border-radius: 20px;
-        width: 640px;
-        position: absolute; 
-        top: 570px;
-    }
-
-    img.vsMobile {
-        height: 200px;
-        border-radius: 20px;
-        border: 2px solid var(--pricipal);
-        transition: .5s;
-    }
-
-    div#comprimido {
-        margin: auto;
+    #comprimido {
+        height: auto;
     }
 
     img.album {
-        height: 145px;
-        margin-top: 20px;
+        height: 140px;
+        margin-bottom: 115px;
     }
 
     .album {
@@ -66,16 +48,22 @@
       }
       
     .album.animado {
-        transition: transform 0.5s ease-in-out;
         border: 2px solid var(--secundario);
         box-shadow: rgba(0, 0, 0, 0.24) 8px 8px 8px;
         height: 200px;
         transform: rotate(0deg);
-        margin: 0px 78px 200px -80px;
+        margin: 50px 78px 167px -80px;
+    }
+
+
+    aside#reniciar {
+        right: 165px;
+        top: 170px;
     }
 
     section#album{
         padding-top: 50px;
+        
     }
 
     section#album p {
@@ -121,5 +109,18 @@
 
     footer {
         margin: 0px;
+    }
+}
+
+@media (max-width: 1230px) and (min-width: 900px) {
+    aside#reniciar {
+        right: 380px;
+        top: 180px;
+    }
+}
+@media (max-width: 1070px) and (min-width: 800px) {
+    aside#reniciar {
+        right: 120px;
+        top: 180px;
     }
 }

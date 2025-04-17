@@ -82,11 +82,6 @@ h2 {
     display: inline;
 }
 
-aside#vsMobile {
-    display: none;
-    
-}
-
 section#album {
     margin: 0px 50px;
     padding-left: 150px;
@@ -119,6 +114,23 @@ img.album {
     height: 300px ;
     box-shadow: rgba(0, 0, 0, 0.24) 8px 8px 8px;
     transform: rotate(0deg);
+}
+
+div#comprimido {
+    position: relative;
+
+}
+
+aside#reniciar {
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 50%;
+    padding: 3px 4px 0px 4px;
+    display: inline;
+    position: absolute;
+    right: 80px;
+    top: 180px;
+    cursor: pointer;
+    
 }
 
 section#album p {
@@ -277,4 +289,12 @@ p#copy {
     display: block;
     margin-top: 60px;
     
+}
+
+aside#subir {
+    background-color: rgba(255, 255, 255, 0.185);
+    margin: 20px;
+    padding: 20px 25px;
+    width: 11px;
+    cursor: pointer;
 }

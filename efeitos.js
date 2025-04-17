@@ -39,43 +39,108 @@ let index = 0;
 
   mostrarFrase();
   setInterval(mostrarFrase, 3000);
-if (innerWidth <= 799) {
+
+
+
+  let celularAtivo = false;
+  let desktopAtivo = false;
+  let intervalo;
+  
+  // Função para limpar o que estava rodando antes
+  function resetarCarrossel() {
+    clearInterval(intervalo);
+  
+    // Remover classes de animação
+    document.querySelectorAll(".album").forEach(img => {
+      img.classList.remove("animado");
+    });
+  
+    // Resetar transformações do carrossel mobile
+    const slides = document.querySelector(".carrossel .slides");
+    if (slides) slides.style.transform = "translateX(0)";
+  }
+  
+  // Função para modo celular
+  function iniciarCarrosselCelular() {
+    celularAtivo = true;
+    desktopAtivo = false;
     let slideIndex = 0;
     const slides = document.querySelector(".carrossel .slides");
     const totalSlides = document.querySelectorAll(".carrossel .album").length;
-
+  
     function showSlide(index) {
-        slides.style.transform = `translateX(-${index * 100}%)`;
+      slides.style.transform = `translateX(-${index * 100}%)`;
     }
-
-    setInterval(() => {
-        slideIndex = (slideIndex + 1) % totalSlides;
-        showSlide(slideIndex);
+  
+    showSlide(slideIndex);
+  
+    intervalo = setInterval(() => {
+      slideIndex = (slideIndex + 1) % totalSlides;
+      showSlide(slideIndex);
     }, 3000);
-}else if(innerWidth <= 1225) {
-  document.addEventListener("DOMContentLoaded", () => {
+  }
+  
+  // Função para modo desktop
+  function iniciarCarrosselDesktop() {
+    desktopAtivo = true;
+    celularAtivo = false;
     const imagens = document.querySelectorAll(".album");
     let indexAtual = 0;
-
+  
     function animarProximaImagem() {
-      // Remove a classe de todas as imagens
       imagens.forEach(img => img.classList.remove("animado"));
-
-      // Adiciona a classe só na próxima imagem
       imagens[indexAtual].classList.add("animado");
-
-      // Atualiza o índice pra próxima imagem
       indexAtual = (indexAtual + 1) % imagens.length;
     }
-
-    // Roda a primeira animação
-    animarProximaImagem();
-
-    // Troca a imagem a cada 3 segundos (3000 ms)
-    setInterval(animarProximaImagem, 3000);
-  })
-} 
-
   
+    animarProximaImagem();
+  
+    intervalo = setInterval(animarProximaImagem, 3000);
+  }
+  
+  // Verifica e ativa o modo certo
+  function verificarTamanhoTela() {
+    const largura = window.innerWidth;
+  
+    resetarCarrossel();
+  
+    if (largura <= 799 && !celularAtivo) {
+      iniciarCarrosselCelular();
+    } else if (largura > 799 && !desktopAtivo) {
+      iniciarCarrosselDesktop();
+    }
+  }
+  
+  // Inicia ao carregar a página
+  document.addEventListener("DOMContentLoaded", () => {
+    verificarTamanhoTela();
+  });
+  
+  // Verifica de novo sempre que a tela for redimensionada
+  window.addEventListener("resize", () => {
+    verificarTamanhoTela();
+  });
+  
+document.addEventListener("DOMContentLoaded", () => {
+    const reniciar = document.getElementById('reniciar')
 
+    reniciar.addEventListener('click', function() {
+        resetarCarrossel()
+        iniciarCarrosselDesktop()
+        iniciarCarrosselCelular()
+    })
+
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+    const subir = document.getElementById('subir')
+
+    subir.addEventListener('click', function() {
+        window.scrollTo({ 
+            top: 0, 
+            behavior: "smooth" 
+        })
+    })
+
+})
 
